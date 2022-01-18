@@ -2,7 +2,17 @@ apiVersion: v1
 entries:
   startpage:
   - apiVersion: v2
-    created: "2022-01-18T11:49:42.93807+01:00"
+    created: "2022-01-18T11:50:07.11542+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 99a69d1a36ba8477008440f9590f2dad1e6225270dc6a25d9b849274b1052ba8
+    icon: file://icon.png
+    name: startpage
+    type: application
+    urls:
+    - https://sergii-ripa.github.io/helm-charts/startpage-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    created: "2022-01-18T11:50:07.030715+01:00"
     description: A Helm chart for Kubernetes
     digest: 44e23db7423062d9170bc1024b73753f2d5044715e222ed10e80edcf998177d3
     icon: file://icon.png
@@ -12,7 +22,7 @@ entries:
     - https://sergii-ripa.github.io/helm-charts/startpage-0.0.2.tgz
     version: 0.0.2
   - apiVersion: v2
-    created: "2022-01-18T11:49:42.9146+01:00"
+    created: "2022-01-18T11:50:07.006151+01:00"
     description: A Helm chart for Kubernetes
     digest: 3fd3e613b08f2bd64955a8b7de5b91d7e114bc001a827b1c7a6e68b51346e7ba
     icon: file://icon.png
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://sergii-ripa.github.io/helm-charts/startpage-0.0.1.tgz
     version: 0.0.1
-generated: "2022-01-18T11:49:42.862191+01:00"
+generated: "2022-01-18T11:50:06.952425+01:00"
