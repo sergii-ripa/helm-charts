@@ -1,0 +1,18 @@
+# Default values for startpage service.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+config:
+  bucketName: startpageBucket
+
+api:
+  replicas: 2
+  image: us-east4-docker.pkg.dev/sym-dev-mr-tools-01/sym-docker/startpage:22.1.0-SNAPSHOT-deployment-gke-3
+  appPort: 8443
+  memory:
+    request: 512M
+    limit: 1024M
+  env:
+    SYM_ENV: dev
+    SYM_ES_JAVA_ARGS: -Xms256M -Xmx256M
+  host: demo-sand.gke-use4-001.dev.symphony.com

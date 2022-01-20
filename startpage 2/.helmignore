@@ -1,0 +1,6 @@
+.idea
+.git
+.gitignore
+docs
+README.md
+publish.sh

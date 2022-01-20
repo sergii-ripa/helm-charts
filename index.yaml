@@ -2,53 +2,13 @@ apiVersion: v1
 entries:
   startpage:
   - apiVersion: v2
-    created: "2022-01-19T10:51:50.930233+01:00"
+    created: "2022-01-20T12:05:48.861143+01:00"
     description: A Helm chart for Kubernetes
-    digest: f88dca1d3ca42e6fe2f0b4baf9209ded9a1aab33030774471e98cd16671751a8
+    digest: b9351ac671d6db4dd32e62c1abdf6a5540ef52246a8b861e88fd0932bf296454
     icon: file://icon.png
     name: startpage
     type: application
     urls:
-    - https://sergii-ripa.github.io/helm-charts/startpage-0.0.5.tgz
-    version: 0.0.5
-  - apiVersion: v2
-    created: "2022-01-19T10:51:50.605654+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 62505239e40d25186abbed412b0eed1f910403f9ab5939afa06236fe366a4780
-    icon: file://icon.png
-    name: startpage
-    type: application
-    urls:
-    - https://sergii-ripa.github.io/helm-charts/startpage-0.0.4.tgz
-    version: 0.0.4
-  - apiVersion: v2
-    created: "2022-01-19T10:51:50.44151+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 99a69d1a36ba8477008440f9590f2dad1e6225270dc6a25d9b849274b1052ba8
-    icon: file://icon.png
-    name: startpage
-    type: application
-    urls:
-    - https://sergii-ripa.github.io/helm-charts/startpage-0.0.3.tgz
-    version: 0.0.3
-  - apiVersion: v2
-    created: "2022-01-19T10:51:50.355997+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 44e23db7423062d9170bc1024b73753f2d5044715e222ed10e80edcf998177d3
-    icon: file://icon.png
-    name: startpage
-    type: application
-    urls:
-    - https://sergii-ripa.github.io/helm-charts/startpage-0.0.2.tgz
-    version: 0.0.2
-  - apiVersion: v2
-    created: "2022-01-19T10:51:50.33177+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 3fd3e613b08f2bd64955a8b7de5b91d7e114bc001a827b1c7a6e68b51346e7ba
-    icon: file://icon.png
-    name: startpage
-    type: application
-    urls:
-    - https://sergii-ripa.github.io/helm-charts/startpage-0.0.1.tgz
-    version: 0.0.1
-generated: "2022-01-19T10:51:50.282226+01:00"
+    - https://sergii-ripa.github.io/helm-charts/startpage-0.0.7.tgz
+    version: 0.0.7
+generated: "2022-01-20T12:05:48.860603+01:00"

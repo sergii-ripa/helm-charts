@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+  labels:
+    internal.symphony.com/name: api
+spec:
+  replicas: {{ .Values.api.replicas }}
+  selector:
+    matchLabels:
+      internal.symphony.com/name: api
+  template:
+    metadata:
+      labels:
+        internal.symphony.com/name: api
+    spec:
+      containers:
+      - name: api
+        image: {{ .Values.api.image | quote }}
+        ports:
+        - containerPort: {{ .Values.api.appPort }}
+        resources:
+          requests:
+            memory: {{ .Values.api.memory.request | quote }}
+          limits:
+            memory: {{ .Values.api.memory.limit | quote }}
+        env:
+        - name: SYM_ENV
+          value: {{ .Values.api.env.SYM_ENV | quote }}
+        - name: SYM_ES_JAVA_ARGS
+          value: {{ .Values.api.env.SYM_ES_JAVA_ARGS | quote }}
+          # overrides the bucket name specified in application.yaml
+        - name: CONTENTSTORAGE_GCS_BUCKET
+          valueFrom:
+            configMapKeyRef:
+              name: {{ .Release.Name }}
+              key: bucketName
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+      securityContext:
+        runAsGroup: 1001
+        runAsUser: 1001
+      volumes:
+      - name: mock-volume
+        emptyDir: {}
